@@ -1,0 +1,58 @@
+body{
+display: grid;
+place-content: center;
+min-height: 50vh;
+}
+
+.pulser{
+    width: 30px;
+    height: 30px;
+    background-color: #09f;
+    border-radius: 100%;
+    /* transition-duration: 1s; */
+    /* por defecto all --> o se pasa cuales propiedades se animan */
+    /* transition-property: scale, background; */
+    /* el timepo para acelerar la entrada o salida
+    ease-in --> va de lento a rapido
+    ease-out --> va de rapido a lento
+    ease-in-out--> va de lento rapido, lento
+    ease --> 
+    steps(5) -->  cuanto saltos da la animacion
+    */
+    /* transition-timing-function: ease-in-out; */
+    /* forma corta */
+    transition: background .3s ease-in-out, scale .6s ease;
+
+
+
+
+}
+
+.pulser:hover{
+    /* transform: scale(2); */
+    background-color: red;
+    scale: 2;
+    box-shadow: 0 0 10px yellow;
+}
+
+
+
+nav{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+   
+}
+nav a{
+    list-style: none;
+    text-decoration: none;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+   
+    
+}
+
+nav a:hover{
+    scale: 1.2;
+    border-bottom: 1px solid gray;
+}

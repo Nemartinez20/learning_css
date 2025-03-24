@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(183, 182, 180, 0.77);
+    display: grid;
+    place-content: center;
+    height: 50vh;
+}
+
+.pulser{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #09f;
+    transition:300ms ease-in-out;  /* -->Estado final */
+}
+
+.pulser:hover{
+    scale: 2;
+    background-color: rgb(173, 176, 175);
+    box-shadow: 0 0 10px yellow;
+    transition-duration: 1s;  /* -->Estado Inicial */
+
+}
